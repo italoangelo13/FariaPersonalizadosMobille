@@ -1,0 +1,47 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content >
+  <div class="bg-login">
+    <ion-row class="ion-padding">
+      <ion-col style="text-align: center;">
+        <img src="assets/img/logo.png" width="100%">
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="ion-padding">
+      <ion-col style="text-align: center;">
+        <form (ngSubmit)="logForm()">
+          <ion-item class="item-campo">
+            <ion-label position="floating">Email</ion-label>
+            <ion-input type="email" name="email" aria-placeholder="Email" [(ngModel)]="email"></ion-input>
+          </ion-item>
+          <ion-item class="item-campo">
+            <ion-label position="floating">Senha</ion-label>
+            <ion-input type="password" name="senha" aria-placeholder="Senha" [(ngModel)]="senha"></ion-input>
+          </ion-item>
+            <ion-button color="primary" type="submit" expand="block">
+              <ion-icon name="log-in" slot="start"></ion-icon> Acessar
+            </ion-button>
+            <ion-button color="success" expand="block" [routerLink]="['/cadastro']">
+              <ion-icon name="add-circle" slot="start"></ion-icon> Cadastrar-se
+            </ion-button>
+        </form>
+      </ion-col>
+    </ion-row>
+  </div>
+
+</ion-content>
+
+
+<ion-footer>
+  <ion-label>v1.0</ion-label>
+</ion-footer>
