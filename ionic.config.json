@@ -1,7 +1,0 @@
-{
-  "name": "Mobile_FP",
-  "integrations": {
-    "cordova": {}
-  },
-  "type": "angular"
-}
